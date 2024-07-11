@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap");
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 86%);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link, .navbar-brand{
+  color: #dff9fb;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  z-index: 1;
+}
+
+.swiper-caption {
+  width: 39%;
+  position: absolute;
+  left: 25%;
+  bottom: 22%;
+  color: white;
+  text-align: left;
+  z-index: 2;
+  text-align: center;
+}
+
+.caption-container h2 {
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: #d2dae2;
+}
+.caption-container p {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #d2dae2;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.one-delay {
+  animation-delay: 1s;
+}
+
+.one-point-five-delay {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  cursor: pointer;
+}
